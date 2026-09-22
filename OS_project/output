@@ -1,1 +1,48 @@
+moukthika@Lakshmis:~$ gcc high_concurency.c
+moukthika@Lakshmis:~$ ./a.out
+====================================
+   HIGH CONCURRENCY FILE SERVER
+====================================
 
+1. READ FILE
+2. WRITE FILE
+3. EXIT
+Enter your choice: 2
+Enter file name: test.txt
+Enter data: this file is meant for testing
+
+Child process created: 676
+Server is ready for another request.
+
+1. READ FILE
+2. WRITE FILE
+3. EXIT
+Enter your choice:
+------------------------------------
+File written: test.txt
+WRITE completed
+------------------------------------
+1
+Enter file name: test.txt
+
+Child process created: 677
+Server is ready for another request.
+
+1. READ FILE
+2. WRITE FILE
+3. EXIT
+Enter your choice:
+------------------------------------
+Reading file: test.txt
+------------------------------------
+this file is meant for testing
+
+------------------------------------
+READ completed
+------------------------------------
+3
+
+====================================
+Server stopped
+====================================
+moukthika@Lakshmis:~$
